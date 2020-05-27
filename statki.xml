@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE statkiKosmiczne SYSTEM "statkiKosmiczne.dtd">
+<statkiKosmiczne>
+    <statki>
+        <statek id="A1" typ="kraz" dost="wojskowy">
+            <oznaczenia>Romeo-133</oznaczenia>
+            <cena waluta="$">500000000</cena>
+            <komponenty>
+                <reaktor>Supernova</reaktor>
+                <modelSilnika>Hefajstos</modelSilnika>
+                <iloscZalogi>250</iloscZalogi>
+                <kadlub>
+                    <klasaPancerza>Tytan</klasaPancerza>
+                    <temperaturaStopienia skala="Celsjusz">10000</temperaturaStopienia>
+                    <wykrywalnosc jednostka="AU">10</wykrywalnosc>
+                </kadlub>
+                <komputerNawigacyjny>
+                    <zasiegSkoku jednostka="AU">50</zasiegSkoku>
+                    <pojemnoscBankowPamieci jednostka="PB">10000</pojemnoscBankowPamieci>
+                </komputerNawigacyjny>
+            </komponenty>
+        </statek>
+        <statek id="A2" typ="kraz" dost="wojskowy">
+            <oznaczenia>Tango-554</oznaczenia>
+            <cena waluta="$">250000000</cena>
+            <komponenty>
+                <reaktor>Supernova</reaktor>
+                <modelSilnika>Ahilles</modelSilnika>
+                <iloscZalogi>150</iloscZalogi>
+                <kadlub>
+                    <klasaPancerza>Merkury</klasaPancerza>
+                    <temperaturaStopienia skala="Celsjusz">11000</temperaturaStopienia>
+                    <wykrywalnosc jednostka="AU">8</wykrywalnosc>
+                </kadlub>
+                <komputerNawigacyjny>
+                    <zasiegSkoku jednostka="AU">65</zasiegSkoku>
+                    <pojemnoscBankowPamieci jednostka="PB">7500</pojemnoscBankowPamieci>
+                </komputerNawigacyjny>
+            </komponenty>
+        </statek>
+        <statek id="A3" typ="tranC" dost="wojskowy">
+            <oznaczenia>Blue-305</oznaczenia>
+            <cena waluta="$">10000000</cena>
+            <komponenty>
+                <reaktor>Helion</reaktor>
+                <modelSilnika>Apollo</modelSilnika>
+                <iloscZalogi>45</iloscZalogi>
+                <kadlub>
+                    <klasaPancerza>Neptun</klasaPancerza>
+                    <temperaturaStopienia skala="Celsjusz">5000</temperaturaStopienia>
+                    <wykrywalnosc jednostka="AU">7</wykrywalnosc>
+                </kadlub>
+                <komputerNawigacyjny>
+                    <zasiegSkoku jednostka="AU">50</zasiegSkoku>
+                    <pojemnoscBankowPamieci jednostka="PB">5000</pojemnoscBankowPamieci>
+                </komputerNawigacyjny>
+            </komponenty>
+        </statek>
+        <statek id="A4" typ="tranC" dost="cywilny">
+            <oznaczenia>Echo-120</oznaczenia>
+            <cena waluta="$">15000000</cena>
+            <komponenty>
+                <reaktor>Helion</reaktor>
+                <modelSilnika>Apollo</modelSilnika>
+                <iloscZalogi>30</iloscZalogi>
+                <kadlub>
+                    <klasaPancerza>Pluton</klasaPancerza>
+                    <temperaturaStopienia skala="Celsjusz">5000</temperaturaStopienia>
+                    <wykrywalnosc jednostka="AU">10</wykrywalnosc>
+                </kadlub>
+                <komputerNawigacyjny>
+                    <zasiegSkoku jednostka="AU">40</zasiegSkoku>
+                    <pojemnoscBankowPamieci jednostka="PB">4000</pojemnoscBankowPamieci>
+                </komputerNawigacyjny>
+            </komponenty>
+        </statek>
+        <statek id="A5" typ="tranC" dost="wojskowy">
+            <oznaczenia>Alfa-700</oznaczenia>
+            <cena waluta="$">50000000</cena>
+            <komponenty>
+                <reaktor>Supernova</reaktor>
+                <modelSilnika>Hefajstos</modelSilnika>
+                <iloscZalogi>50</iloscZalogi>
+                <kadlub>
+                    <klasaPancerza>Europa</klasaPancerza>
+                    <temperaturaStopienia skala="Celsjusz">9000</temperaturaStopienia>
+                    <wykrywalnosc jednostka="AU">8</wykrywalnosc>
+                </kadlub>
+                <komputerNawigacyjny>
+                    <zasiegSkoku jednostka="AU">70</zasiegSkoku>
+                    <pojemnoscBankowPamieci jednostka="PB">7000</pojemnoscBankowPamieci>
+                </komputerNawigacyjny>
+            </komponenty>
+        </statek>
+        <statek id="A6" typ="tranL" dost="wojskowy">
+            <oznaczenia>Hedgehog-914</oznaczenia>
+            <cena waluta="$">100000000</cena>
+            <komponenty>
+                <reaktor>BlackHole</reaktor>
+                <modelSilnika>Hermes</modelSilnika>
+                <iloscZalogi>25</iloscZalogi>
+                <kadlub>
+                    <klasaPancerza>Lua</klasaPancerza>
+                    <temperaturaStopienia skala="Celsjusz">5000</temperaturaStopienia>
+                    <wykrywalnosc jednostka="AU">1</wykrywalnosc>
+                </kadlub>
+                <komputerNawigacyjny>
+                    <zasiegSkoku jednostka="AU">80</zasiegSkoku>
+                    <pojemnoscBankowPamieci jednostka="PB">10000</pojemnoscBankowPamieci>
+                </komputerNawigacyjny>
+            </komponenty>
+        </statek>
+        <statek id="A7" typ="tranL" dost="cywilny">
+            <oznaczenia>Jin-45</oznaczenia>
+            <cena waluta="$">10000000</cena>
+            <komponenty>
+                <reaktor>Helion</reaktor>
+                <modelSilnika>Apollo</modelSilnika>
+                <iloscZalogi>20</iloscZalogi>
+                <kadlub>
+                    <klasaPancerza>Pluton</klasaPancerza>
+                    <temperaturaStopienia skala="Celsjusz">5000</temperaturaStopienia>
+                    <wykrywalnosc jednostka="AU">10</wykrywalnosc>
+                </kadlub>
+                <komputerNawigacyjny>
+                    <zasiegSkoku jednostka="AU">30</zasiegSkoku>
+                    <pojemnoscBankowPamieci jednostka="PB">1000</pojemnoscBankowPamieci>
+                </komputerNawigacyjny>
+            </komponenty>
+        </statek>
+        <statek id="A8" typ="kraz" dost="cywilny">
+            <oznaczenia>Nova-777</oznaczenia>
+            <cena waluta="$">250000000</cena>
+            <komponenty>
+                <reaktor>Supernova</reaktor>
+                <modelSilnika>Atena</modelSilnika>
+                <iloscZalogi>200</iloscZalogi>
+                <kadlub>
+                    <klasaPancerza>Tytan</klasaPancerza>
+                    <temperaturaStopienia skala="Celsjusz">10000</temperaturaStopienia>
+                    <wykrywalnosc jednostka="AU">20</wykrywalnosc>
+                </kadlub>
+                <komputerNawigacyjny>
+                    <zasiegSkoku jednostka="AU">50</zasiegSkoku>
+                    <pojemnoscBankowPamieci jednostka="PB">8000</pojemnoscBankowPamieci>
+                </komputerNawigacyjny>
+            </komponenty>
+        </statek>
+    </statki>
+    
+    <kategorie>
+        <kategoria typBle="tranC">
+            <skrot>tranC</skrot>
+            <pelnaNazwa>Transportowiec Ciezki</pelnaNazwa>
+        </kategoria>
+        <kategoria typBle="tranL">
+            <skrot>tranL</skrot>
+            <pelnaNazwa>Transportowiec Lekki</pelnaNazwa>
+        </kategoria>
+        <kategoria typBle="kraz">
+            <skrot>kraz</skrot>
+            <pelnaNazwa>Krazownik</pelnaNazwa>
+        </kategoria>
+    </kategorie>
+</statkiKosmiczne>

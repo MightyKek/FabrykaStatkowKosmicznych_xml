@@ -1,0 +1,35 @@
+<!ELEMENT statkiKosmiczne (statki, kategorie)>
+<!ELEMENT statki (statek+)>
+<!ELEMENT kategorie (kategoria+)>
+
+<!ELEMENT statek (oznaczenia, cena, komponenty)>
+<!ELEMENT oznaczenia (#PCDATA)>
+<!ELEMENT cena (#PCDATA)>
+
+<!ELEMENT komponenty (reaktor, modelSilnika, iloscZalogi, kadlub, komputerNawigacyjny)>
+<!ELEMENT reaktor (#PCDATA)>
+<!ELEMENT modelSilnika (#PCDATA)>
+<!ELEMENT iloscZalogi (#PCDATA)>
+
+<!ELEMENT kadlub (klasaPancerza, temperaturaStopienia, wykrywalnosc)>
+<!ELEMENT klasaPancerza (#PCDATA)>
+<!ELEMENT temperaturaStopienia (#PCDATA)>
+<!ELEMENT wykrywalnosc (#PCDATA)>
+
+<!ELEMENT komputerNawigacyjny (zasiegSkoku, pojemnoscBankowPamieci)>
+<!ELEMENT zasiegSkoku (#PCDATA)>
+<!ELEMENT pojemnoscBankowPamieci (#PCDATA)>
+
+<!ELEMENT kategoria (skrot, pelnaNazwa)>
+<!ELEMENT skrot (#PCDATA)>
+<!ELEMENT pelnaNazwa (#PCDATA)>
+
+<!ATTLIST statek id ID #REQUIRED>
+<!ATTLIST statek typ IDREF #REQUIRED>
+<!ATTLIST statek dost (cywilny|wojskowy) "wojskowy">
+<!ATTLIST cena waluta CDATA #REQUIRED>
+<!ATTLIST temperaturaStopienia skala CDATA #REQUIRED>
+<!ATTLIST wykrywalnosc jednostka CDATA #REQUIRED>
+<!ATTLIST zasiegSkoku jednostka CDATA #REQUIRED>
+<!ATTLIST pojemnoscBankowPamieci jednostka CDATA #REQUIRED>
+<!ATTLIST kategoria typBle ID #REQUIRED>
