@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:attribute name="id">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:pattern value="A([0-9])+"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:attribute>
+
+	<xsd:attribute name="typ">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="tranC"/>
+				<xsd:enumeration value="tranL"/>
+				<xsd:enumeration value="kraz"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:attribute>
+
+	<xsd:attribute name="dost">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="wojskowy"/>
+				<xsd:enumeration value="cywilny"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:attribute>
+
+	<xsd:attribute name="waluta">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="$"/>
+				<xsd:enumeration value="€"/>
+				<xsd:enumeration value="zl"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:attribute>
+
+	<xsd:attribute name="skala">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="Celsjusz"/>
+				<xsd:enumeration value="Fahrenheit"/>
+				<xsd:enumeration value="Kelwin"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:attribute>
+
+	<xsd:attribute name="jednostkaOdleglosci">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="AU"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:attribute>
+
+	<xsd:attribute name="jednostkaPamieci">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="PB"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:attribute>
+
+	<xsd:attribute name="typBle">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string"/>
+		</xsd:simpleType>
+	</xsd:attribute>
+
+	<xsd:simpleType name="oznaczenia">
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="cena-wartosc">
+		<xsd:restriction base="xsd:integer"/>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="temperaturaStopienia-skala">
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="wykrywalnosc-jednostkaOdleglosci">
+		<xsd:restriction base="xsd:integer"/>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="zasiegSkoku-jednostkaOdleglosci">
+		<xsd:restriction base="xsd:integer"/>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="pojemnoscBankowPamieci-jednostkaPamieci">
+		<xsd:restriction base="xsd:integer"/>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="kategoria-typBle">
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="reaktor">
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="modelSilnika">
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="iloscZalogi">
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="klasaPancerza">
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="skrot">
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="pelnaNazwa">
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+
+	<xsd:complexType name="cena">
+		<xsd:simpleContent>
+			<xsd:extension base="cena-wartosc">
+				<xsd:attribute ref="waluta" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="temperaturaStopienia">
+		<xsd:simpleContent>
+			<xsd:extension base="temperaturaStopienia-skala">
+				<xsd:attribute ref="skala" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="wykrywalnosc">
+		<xsd:simpleContent>
+			<xsd:extension base="wykrywalnosc-jednostkaOdleglosci">
+				<xsd:attribute ref="jednostkaOdleglosci" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="zasiegSkoku">
+		<xsd:simpleContent>
+			<xsd:extension base="zasiegSkoku-jednostkaOdleglosci">
+				<xsd:attribute ref="jednostkaOdleglosci" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="pojemnoscBankowPamieci">
+		<xsd:simpleContent>
+			<xsd:extension base="pojemnoscBankowPamieci-jednostkaPamieci">
+				<xsd:attribute ref="jednostkaPamieci" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="kadlub">		
+		<xsd:sequence>
+			<xsd:element name="klasaPancerza" type="klasaPancerza"/>
+			<xsd:element name="temperaturaStopienia" type="temperaturaStopienia"/>
+			<xsd:element name="wykrywalnosc" type="wykrywalnosc"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="komputerNawigacyjny">
+		<xsd:sequence>
+			<xsd:element name="zasiegSkoku" type="zasiegSkoku"/>
+			<xsd:element name="pojemnoscBankowPamieci" type="pojemnoscBankowPamieci"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="komponenty">
+		<xsd:sequence>
+			<xsd:element name="reaktor" type="reaktor"/>
+			<xsd:element name="modelSilnika" type="modelSilnika"/>
+			<xsd:element name="iloscZalogi" type="iloscZalogi"/>
+			<xsd:element name="kadlub" type="kadlub"/>
+			<xsd:element name="komputerNawigacyjny" type="komputerNawigacyjny"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="statek">
+		<xsd:sequence>
+			<xsd:element name="oznaczenia" type="oznaczenia"/>
+			<xsd:element name="cena" type="cena"/>
+			<xsd:element name="komponenty" type="komponenty"/>
+		</xsd:sequence>
+		<xsd:attribute ref="id" use="required"/>
+		<xsd:attribute ref="typ" use="required"/>
+		<xsd:attribute ref="dost" use="required"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="statki">
+		<xsd:sequence>
+			<xsd:element name="statek" type="statek" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="kategoria">
+		<xsd:sequence>
+			<xsd:element name="skrot" type="skrot"/>
+			<xsd:element name="pelnaNazwa" type="pelnaNazwa"/>
+		</xsd:sequence>
+		<xsd:attribute ref="typBle" use="required"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="kategorie">
+		<xsd:sequence>
+			<xsd:element name="kategoria" type="kategoria" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="statkiKosmiczne">
+		<xsd:sequence>
+			<xsd:element name="statki" type="statki" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="kategorie" type="kategorie" minOccurs="1" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:element name="statkiKosmiczne" type="statkiKosmiczne">
+		<xsd:key name="idKlucz">
+			<xsd:selector xpath=".//kategorie/kategoria"/>
+			<xsd:field xpath="skrot"/>
+		</xsd:key>
+		<xsd:keyref name="idRef" refer="idKlucz">
+			<xsd:selector xpath=".//statki/statek"/>
+			<xsd:field xpath="@typ"/>
+		</xsd:keyref> 
+	</xsd:element>
+</xsd:schema>

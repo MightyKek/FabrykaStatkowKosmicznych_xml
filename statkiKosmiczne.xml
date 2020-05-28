@@ -12,11 +12,11 @@
                 <kadlub>
                     <klasaPancerza>Tytan</klasaPancerza>
                     <temperaturaStopienia skala="Celsjusz">10000</temperaturaStopienia>
-                    <wykrywalnosc jednostka="AU">10</wykrywalnosc>
+                    <wykrywalnosc jednostkaOdleglosci="AU">10</wykrywalnosc>
                 </kadlub>
                 <komputerNawigacyjny>
-                    <zasiegSkoku jednostka="AU">50</zasiegSkoku>
-                    <pojemnoscBankowPamieci jednostka="PB">10000</pojemnoscBankowPamieci>
+                    <zasiegSkoku jednostkaOdleglosci="AU">50</zasiegSkoku>
+                    <pojemnoscBankowPamieci jednostkaPamieci="PB">10000</pojemnoscBankowPamieci>
                 </komputerNawigacyjny>
             </komponenty>
         </statek>
@@ -30,11 +30,11 @@
                 <kadlub>
                     <klasaPancerza>Merkury</klasaPancerza>
                     <temperaturaStopienia skala="Celsjusz">11000</temperaturaStopienia>
-                    <wykrywalnosc jednostka="AU">8</wykrywalnosc>
+                    <wykrywalnosc jednostkaOdleglosci="AU">8</wykrywalnosc>
                 </kadlub>
                 <komputerNawigacyjny>
-                    <zasiegSkoku jednostka="AU">65</zasiegSkoku>
-                    <pojemnoscBankowPamieci jednostka="PB">7500</pojemnoscBankowPamieci>
+                    <zasiegSkoku jednostkaOdleglosci="AU">65</zasiegSkoku>
+                    <pojemnoscBankowPamieci jednostkaPamieci="PB">7500</pojemnoscBankowPamieci>
                 </komputerNawigacyjny>
             </komponenty>
         </statek>
@@ -48,11 +48,11 @@
                 <kadlub>
                     <klasaPancerza>Neptun</klasaPancerza>
                     <temperaturaStopienia skala="Celsjusz">5000</temperaturaStopienia>
-                    <wykrywalnosc jednostka="AU">7</wykrywalnosc>
+                    <wykrywalnosc jednostkaOdleglosci="AU">7</wykrywalnosc>
                 </kadlub>
                 <komputerNawigacyjny>
-                    <zasiegSkoku jednostka="AU">50</zasiegSkoku>
-                    <pojemnoscBankowPamieci jednostka="PB">5000</pojemnoscBankowPamieci>
+                    <zasiegSkoku jednostkaOdleglosci="AU">50</zasiegSkoku>
+                    <pojemnoscBankowPamieci jednostkaPamieci="PB">5000</pojemnoscBankowPamieci>
                 </komputerNawigacyjny>
             </komponenty>
         </statek>
@@ -66,11 +66,11 @@
                 <kadlub>
                     <klasaPancerza>Pluton</klasaPancerza>
                     <temperaturaStopienia skala="Celsjusz">5000</temperaturaStopienia>
-                    <wykrywalnosc jednostka="AU">10</wykrywalnosc>
+                    <wykrywalnosc jednostkaOdleglosci="AU">10</wykrywalnosc>
                 </kadlub>
                 <komputerNawigacyjny>
-                    <zasiegSkoku jednostka="AU">40</zasiegSkoku>
-                    <pojemnoscBankowPamieci jednostka="PB">4000</pojemnoscBankowPamieci>
+                    <zasiegSkoku jednostkaOdleglosci="AU">40</zasiegSkoku>
+                    <pojemnoscBankowPamieci jednostkaPamieci="PB">4000</pojemnoscBankowPamieci>
                 </komputerNawigacyjny>
             </komponenty>
         </statek>
@@ -84,11 +84,11 @@
                 <kadlub>
                     <klasaPancerza>Europa</klasaPancerza>
                     <temperaturaStopienia skala="Celsjusz">9000</temperaturaStopienia>
-                    <wykrywalnosc jednostka="AU">8</wykrywalnosc>
+                    <wykrywalnosc jednostkaOdleglosci="AU">8</wykrywalnosc>
                 </kadlub>
                 <komputerNawigacyjny>
-                    <zasiegSkoku jednostka="AU">70</zasiegSkoku>
-                    <pojemnoscBankowPamieci jednostka="PB">7000</pojemnoscBankowPamieci>
+                    <zasiegSkoku jednostkaOdleglosci="AU">70</zasiegSkoku>
+                    <pojemnoscBankowPamieci jednostkaPamieci="PB">7000</pojemnoscBankowPamieci>
                 </komputerNawigacyjny>
             </komponenty>
         </statek>
@@ -102,11 +102,11 @@
                 <kadlub>
                     <klasaPancerza>Lua</klasaPancerza>
                     <temperaturaStopienia skala="Celsjusz">5000</temperaturaStopienia>
-                    <wykrywalnosc jednostka="AU">1</wykrywalnosc>
+                    <wykrywalnosc jednostkaOdleglosci="AU">1</wykrywalnosc>
                 </kadlub>
                 <komputerNawigacyjny>
-                    <zasiegSkoku jednostka="AU">80</zasiegSkoku>
-                    <pojemnoscBankowPamieci jednostka="PB">10000</pojemnoscBankowPamieci>
+                    <zasiegSkoku jednostkaOdleglosci="AU">80</zasiegSkoku>
+                    <pojemnoscBankowPamieci jednostkaPamieci="PB">10000</pojemnoscBankowPamieci>
                 </komputerNawigacyjny>
             </komponenty>
         </statek>
@@ -120,11 +120,11 @@
                 <kadlub>
                     <klasaPancerza>Pluton</klasaPancerza>
                     <temperaturaStopienia skala="Celsjusz">5000</temperaturaStopienia>
-                    <wykrywalnosc jednostka="AU">10</wykrywalnosc>
+                    <wykrywalnosc jednostkaOdleglosci="AU">10</wykrywalnosc>
                 </kadlub>
                 <komputerNawigacyjny>
-                    <zasiegSkoku jednostka="AU">30</zasiegSkoku>
-                    <pojemnoscBankowPamieci jednostka="PB">1000</pojemnoscBankowPamieci>
+                    <zasiegSkoku jednostkaOdleglosci="AU">30</zasiegSkoku>
+                    <pojemnoscBankowPamieci jednostkaPamieci="PB">1000</pojemnoscBankowPamieci>
                 </komputerNawigacyjny>
             </komponenty>
         </statek>
@@ -138,11 +138,11 @@
                 <kadlub>
                     <klasaPancerza>Tytan</klasaPancerza>
                     <temperaturaStopienia skala="Celsjusz">10000</temperaturaStopienia>
-                    <wykrywalnosc jednostka="AU">20</wykrywalnosc>
+                    <wykrywalnosc jednostkaOdleglosci="AU">20</wykrywalnosc>
                 </kadlub>
                 <komputerNawigacyjny>
-                    <zasiegSkoku jednostka="AU">50</zasiegSkoku>
-                    <pojemnoscBankowPamieci jednostka="PB">8000</pojemnoscBankowPamieci>
+                    <zasiegSkoku jednostkaOdleglosci="AU">50</zasiegSkoku>
+                    <pojemnoscBankowPamieci jednostkaPamieci="PB">8000</pojemnoscBankowPamieci>
                 </komputerNawigacyjny>
             </komponenty>
         </statek>

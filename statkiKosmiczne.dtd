@@ -29,7 +29,7 @@
 <!ATTLIST statek dost (cywilny|wojskowy) "wojskowy">
 <!ATTLIST cena waluta CDATA #REQUIRED>
 <!ATTLIST temperaturaStopienia skala CDATA #REQUIRED>
-<!ATTLIST wykrywalnosc jednostka CDATA #REQUIRED>
-<!ATTLIST zasiegSkoku jednostka CDATA #REQUIRED>
-<!ATTLIST pojemnoscBankowPamieci jednostka CDATA #REQUIRED>
+<!ATTLIST wykrywalnosc jednostkaOdleglosci CDATA #REQUIRED>
+<!ATTLIST zasiegSkoku jednostkaOdleglosci CDATA #REQUIRED>
+<!ATTLIST pojemnoscBankowPamieci jednostkaPamieci CDATA #REQUIRED>
 <!ATTLIST kategoria typBle ID #REQUIRED>
