@@ -31,37 +31,39 @@
   </xsl:template>
 
   <xsl:template match="komponenty">
-    <div class="reaktor"><xsl:value-of select="reaktor"/></div>
-    <div class="modelSilnika"><xsl:value-of select="modelSilnika"/></div>
-    <div class="iloscZalogi"><xsl:value-of select="iloscZalogi"/></div>
-    <div class="kadlub">
-      <xsl:apply-templates select="kadlub"/>
+    <div class="container">
+      <div class="reaktor"><xsl:value-of select="reaktor"/></div>
+      <div class="modelSilnika"><xsl:value-of select="modelSilnika"/></div>
+      <div class="iloscZalogi"><xsl:value-of select="iloscZalogi"/></div>
     </div>
-    <div class="komputerNawigacyjny">
-      <xsl:apply-templates select="komputerNawigacyjny"/>
+    <div class="container">
+      <div class="kadlub">
+        <xsl:apply-templates select="kadlub"/>
+      </div>
+    </div>
+    <div class="container">
+      <div class="komputerNawigacyjny">
+        <xsl:apply-templates select="komputerNawigacyjny"/>
+      </div>
     </div>
   </xsl:template>
 
   <xsl:template match="kadlub">
-    <div class="container">
-      <div class="klasaPancerza"><xsl:value-of select="klasaPancerza"/></div>
-      <div class="temperaturaStopienia">
-        <xsl:value-of select="temperaturaStopienia"/><xsl:value-of select="temperaturaStopienia/@skala"/>
-      </div>
-      <div class="wykrywalnosc">
-        <xsl:value-of select="wykrywalnosc"/><xsl:value-of select="wykrywalnosc/@jednostkaOdleglosci"/>
-      </div>
+    <div class="klasaPancerza"><xsl:value-of select="klasaPancerza"/></div>
+    <div class="temperaturaStopienia">
+      <xsl:value-of select="temperaturaStopienia"/><xsl:value-of select="temperaturaStopienia/@skala"/>
+    </div>
+    <div class="wykrywalnosc">
+      <xsl:value-of select="wykrywalnosc"/><xsl:value-of select="wykrywalnosc/@jednostkaOdleglosci"/>
     </div>
   </xsl:template>
 
   <xsl:template match="komputerNawigacyjny">
-    <div class="container">
-      <div class="zasiegSkoku">
-        <xsl:value-of select="zasiegSkoku"/><xsl:value-of select="zasiegSkoku/@jednostkaOdleglosci"/>
-      </div>
-      <div class="pojemnoscBankowPamieci">
-        <xsl:value-of select="pojemnoscBankowPamieci"/><xsl:value-of select="pojemnoscBankowPamieci/@jednostkaPamieci"/>
-      </div>
+    <div class="zasiegSkoku">
+      <xsl:value-of select="zasiegSkoku"/><xsl:value-of select="zasiegSkoku/@jednostkaOdleglosci"/>
+    </div>
+    <div class="pojemnoscBankowPamieci">
+      <xsl:value-of select="pojemnoscBankowPamieci"/><xsl:value-of select="pojemnoscBankowPamieci/@jednostkaPamieci"/>
     </div>
   </xsl:template>
 

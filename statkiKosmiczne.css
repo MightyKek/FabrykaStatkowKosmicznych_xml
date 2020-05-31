@@ -1,9 +1,11 @@
 body {
-    background-color: rgb(197, 60, 5);
+    background-color: rgb(97, 67, 230);
     font-family: Arial;
     font-size: 15;
     font-style: bold;
-    color: rgb(35, 102, 15);
+    color: rgb(182, 238, 164);
+    width: 80%;
+    margin: auto;
 }
 
 .statki {
@@ -17,17 +19,32 @@ body {
     padding: 5px 25px;
     height: min-content;
     border: 2px solid rgb(0,0,0);
-    background-color: rgb(146, 173, 214);
+    background-color: rgb(7, 65, 153);
     transition: 0.2s;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; 
 }
 
 .statek:hover {
-    background-color: rgb(180, 130, 94);
+    background-color: rgb(185, 81, 6);
     border-color: rgb(90, 60, 90);
-    transform: scale(1.03);
+}
+
+.komponenty {
+    display: flex;
+    flex-direction: row;
+}
+
+.komponenty::before {
+    content: 'Komponenty: ';
+}
+
+.kadlub::before {
+    content: 'Kadlub: ';
+}
+
+.komputerNawigacyjny::before {
+    content: 'Komputer Nawigacyjny: ';
 }
 
 .id::before {
@@ -50,14 +67,42 @@ body {
     content: 'Cena: ';
 }
 
-.container {
-    display: block;
+.reaktor::before {
+    content: 'Model Reaktora: ';
 }
 
-.nazwa {
+.modelSilnika::before {
+    content: 'Model Silnika: ';
+}
+
+.iloscZalogi::before {
+    content: 'Ilosc Zalogi: ';
+}
+
+.klasaPancerza::before {
+    content: 'Klasa Pancerza: ';
+}
+
+.temperaturaStopienia::before {
+    content: 'Temperatura Stopienia: ';
+}
+
+.wykrywalnosc::before {
+    content: 'Wykrywalnosc: ';
+}
+
+.zasiegSkoku::before {
+    content: 'Zasieg Skoku: ';
+}
+
+.pojemnoscBankowPamieci::before {
+    content: 'Pojemnosc Bankow Pamieci: ';
+}
+
+.container {
+    margin-left: 25px;
+    margin-right: 25px;
     display: block;
-    font-size: 1.5rem;
-    padding: 0.5rem;
 }
 
 .kategoria {
