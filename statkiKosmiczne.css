@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(197, 60, 5);
+    font-family: Arial;
+    font-size: 15;
+    font-style: bold;
+    color: rgb(35, 102, 15);
+}
+
+.statki {
+    display: flex;
+    margin: 25px;
+    padding: 5px;
+}
+
+.statek {
+    margin: 25px;
+    padding: 5px 25px;
+    height: min-content;
+    border: 2px solid rgb(0,0,0);
+    background-color: rgb(146, 173, 214);
+    transition: 0.2s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.statek:hover {
+    background-color: rgb(180, 130, 94);
+    border-color: rgb(90, 60, 90);
+    transform: scale(1.03);
+}
+
+.id::before {
+    content: 'Id w katalogu: ';
+}
+
+.typ::before {
+    content: 'Typ: ';
+}
+
+.dost::before {
+    content: 'Dostep: ';
+}
+
+.oznaczenia::before {
+    content: 'Model: ';
+}
+
+.cena::before {
+    content: 'Cena: ';
+}
+
+.container {
+    display: block;
+}
+
+.nazwa {
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.kategoria {
+    display: none;
+}

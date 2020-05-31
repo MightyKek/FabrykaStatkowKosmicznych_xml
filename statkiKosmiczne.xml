@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE statkiKosmiczne SYSTEM "statkiKosmiczne.dtd">
 <statkiKosmiczne>
+
     <statki>
         <statek id="A1" typ="kraz" dost="wojskowy">
             <oznaczenia>Romeo-133</oznaczenia>
@@ -162,4 +163,5 @@
             <pelnaNazwa>Krazownik</pelnaNazwa>
         </kategoria>
     </kategorie>
+
 </statkiKosmiczne>
